@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project SEKAI CTF 2025</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="SekaiCTF 2025" />
+    <meta property="og:description" content="SekaiCTF 2025 is yet another CTF contest brought to you by yet another CTF team." />
+    <meta property="og:image" content="https://ProjectSEKAIctf.1a23.studio/twitter-card.png" />
+    <meta property="og:type" content="website" />
+	<link rel="shortcut icon" href="/files/0a0c4e95aafe36721c0388ab48cb3255/SekaiCTF_Small.png">
+    <script src="https://unpkg.com/@ungap/has-own@0.1.1/min.js"></script>
+
+    
+    <link rel="stylesheet" href="/themes/luna-vite/static/assets/main.1b6d3920.css">
+    
+
+    
+
+    <script type="text/javascript">
+        window.init = {
+            'urlRoot': "",
+            'csrfNonce': "0e7f05d578d88d6f6dfdea88a1496fb17dd8ab7b308f2229634ad66a688e4249",
+            'userMode': "teams",
+            'smallIcon': "/files/0a0c4e95aafe36721c0388ab48cb3255/SekaiCTF_Small.png",
+            'userId': 0,
+            'userName': null,
+            'userEmail': "None",
+            'teamId': null,
+            'teamName': null,
+            'start': 1755306000,
+            'end': 1755478800,
+            'themeSettings': {"cat_name_blockchains": "Blockchains", "cat_name_crypto": "Cryptography", "cat_name_forensics": "Forensics", "cat_name_misc": "Misc", "cat_name_ppc": "PPC", "cat_name_pwn": "Pwn", "cat_name_rev": "Reverse", "cat_name_web": "Web", "challenge_category_order": "", "challenge_order": "", "flag_placeholder": "SEKAI{\u2026}", "social_banner": "https://ProjectSEKAIctf.1a23.studio/twitter-card.png", "social_desc": "SekaiCTF 2025 is yet another CTF contest brought to you by yet another CTF team.", "social_link_icon": "mdi:discord", "social_link_url": "https://discord.gg/6gk7jhCgGX", "tag_difficulty_1": "\u2b50", "tag_difficulty_2": "\u2b50\u2b50", "tag_difficulty_3": "\u2b50\u2b50\u2b50", "tag_difficulty_4": "\u2b50\u2b50\u2b50\u2b50", "tag_difficulty_5": "\u2b50\u2b50\u2b50\u2b50\u2b50", "tag_difficulty_6": "\u2b50\u2b50\u2b50\u2b50\u2b50\u2b50"},
+        }
+    </script>
+
+    
+</head>
+
+<body class="teams-listing">
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg" style="position: absolute; visibility: hidden;">
+        <filter id="primaryIconStroke" filterUnits="objectBoundingBox"
+            primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feMorphology operator="dilate" radius="2 2" in="SourceGraphic"
+                result="morphology" />
+            <feMorphology operator="dilate" radius="3.5 3.5" in="SourceGraphic"
+                result="morphology1" />
+            <feFlood flood-color="#ffffff" flood-opacity="1" result="flood" />
+            <feFlood flood-color="#E0E0E0" flood-opacity="1" result="flood1" />
+            <feComposite in="flood" in2="morphology" operator="in"
+                result="composite" />
+            <feComposite in="flood1" in2="morphology1" operator="in"
+                result="composite1" />
+            <feMerge result="merge">
+                <feMergeNode in="composite1" />
+                <feMergeNode in="composite" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <filter id="accentIconStroke" filterUnits="objectBoundingBox"
+            primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feMorphology operator="dilate" radius="2 2" in="SourceGraphic"
+                result="morphology" />
+            <feMorphology operator="dilate" radius="3.5 3.5" in="SourceGraphic"
+                result="morphology1" />
+            <feFlood flood-color="#ffffff" flood-opacity="1" result="flood" />
+            <feFlood flood-color="#95FCDB" flood-opacity="1" result="flood1" />
+            <feComposite in="flood" in2="morphology" operator="in"
+                result="composite" />
+            <feComposite in="flood1" in2="morphology1" operator="in"
+                result="composite1" />
+            <feMerge result="merge">
+                <feMergeNode in="composite1" />
+                <feMergeNode in="composite" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <filter id="chevronStroke" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feMorphology operator="dilate" radius="3 3" in="SourceGraphic" result="morphology"/>
+            <feFlood flood-color="#ffffff" flood-opacity="1" result="flood"/>
+            <feComposite in="flood" in2="morphology" operator="in" result="composite2"/>
+            <feMerge result="merge">
+                    <feMergeNode in="composite2"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+        </filter>
+        <linearGradient id="primaryGradient" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="#EB53B8" stop-opacity="1" />
+            <stop offset="100%" stop-color="#EE79F8" stop-opacity="1" />
+        </linearGradient>
+    </svg>
+
+    
+<div class="triangleContainer">
+    <div class="controlRow">
+        <div class="titleContainer">
+            <button class="button iconButton" id="backButton" aria-label="Go back" title="Go back">
+                <iconify-icon icon="icon-park-solid:back"></iconify-icon>
+            </button>
+            <div class="titleGroup">
+                <h1 class="title">Teams</h1>
+                <h2 class="subtitle"><span>Teams list</span></h2>
+            </div>
+        </div>
+        <div class="filler"></div>
+        
+        <button class="button shade iconButton menuButton buttonNotification" id="mainMenuButton" aria-label="Main menu" title="Main Menu">
+    <iconify-icon icon="ic:baseline-menu"></iconify-icon>
+</button>
+<dialog class="modal fit" id="mainMenuModal">
+    <h2 class="modalHeader">Menu</h2>
+    <div class="modalBody">
+        
+            <a class="button textButton shade primaryIcon" href="/rules">
+                <iconify-icon icon="ic:baseline-contact-page"></iconify-icon>
+                <span>Rules</span>
+            </a>
+        
+
+        
+            
+                <a class="button textButton shade primaryIcon" href="/teams">
+                    <iconify-icon icon="ic:baseline-people-alt"></iconify-icon>
+                    <span>Teams</span>
+                </a>
+            
+
+            <a class="button textButton shade primaryIcon" href="/users">
+                <iconify-icon icon="ic:baseline-person"></iconify-icon>
+                <span>Users</span>
+            </a>
+        
+
+        
+            <a class="button textButton shade primaryIcon" href="/scoreboard">
+                <iconify-icon icon="mdi:podium"></iconify-icon>
+                <span>Ranking</span>
+            </a>
+        
+
+        <a class="button textButton alternate" href="/">
+            <iconify-icon icon="ic:baseline-home"></iconify-icon>
+            <span>Home</span>
+        </a>
+
+        <a class="button textButton alternate" id="mainMenuTitleBtn" href="/">
+            <iconify-icon icon="icon-park-solid:back"></iconify-icon>
+            <span>Title</span>
+        </a>
+
+        
+
+            
+<a class="button textButton alternate" id="mainMenuTitleBtn" href="/challenges">
+                    <iconify-icon icon="fluent:music-note-2-24-filled"></iconify-icon>
+                    <span>Challenges</span>
+                </a>            
+
+<a class="button textButton alternate" id="mainMenuTitleBtn" href="https://github.com/project-sekai-ctf/sekaictf-2025/">
+                <iconify-icon icon="mdi:github"></iconify-icon>
+                <span>GitHub</span>
+            </a>        
+    </div>
+    <div class="modalFooter">
+        <button class="button textButton shade" id="mainMenuClose">
+            <span>Close</span>
+        </button>
+    </div>
+</dialog>
+    </div>
+    <div class="contentWrapper">
+        
+<div class="frameContentWrapper">
+  
+  
+  
+
+  
+    <div class="grid">
+      
+        
+        <a href="/teams/1137" class="gridCell">
+        
+          <div class="cellHeader">k3rn3l32</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/4d8913872030ff3f93941fbfffd8539a?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=k3rn3l32" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1138" class="gridCell">
+        
+          <div class="cellHeader">cyb3r.p4ls</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/48fa055edb68800c38befad2fcedd1a4?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=cyb3r.p4ls" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1139" class="gridCell">
+        
+          <div class="cellHeader">ShetaV</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/1c64f45ef063cbc448fd6d841e419237?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=ShetaV" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1140" class="gridCell">
+        
+          <div class="cellHeader">lyuiutyuityut</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/d191e096229630009d7011305d149b50?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=lyuiutyuityut" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1141" class="gridCell">
+        
+          <div class="cellHeader">RubiyaLab</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/abfcf7fa971bb6ed0508cf2ddc104466?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=RubiyaLab" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            3 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1143" class="gridCell">
+        
+          <div class="cellHeader">SleepyHollow</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/cd377dc42d7e772d9ed4c8d0ceb5f9b9?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=SleepyHollow" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            2 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1144" class="gridCell">
+        
+          <div class="cellHeader">saigonab</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/a75b34c36fe55a34999b0e70779c8d1b?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=saigonab" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1145" class="gridCell">
+        
+          <div class="cellHeader">m</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/413657e7d5e4abd4ce0c52f6890d9ce2?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=m" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1146" class="gridCell">
+        
+          <div class="cellHeader">KonSol-T</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/97e28dc561bf40034a47160ab871930d?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=KonSol-T" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1147" class="gridCell">
+        
+          <div class="cellHeader">123321</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/c247edb64df762893516d75d8f773878?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=123321" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1148" class="gridCell">
+        
+          <div class="cellHeader">hmgls2m3</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/1370d659358ebabafab375abcd5df57a?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=hmgls2m3" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1149" class="gridCell">
+        
+          <div class="cellHeader">kohane</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/1ffec9c3dd4566af7c6a7af6590bfc84?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=kohane" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1150" class="gridCell">
+        
+          <div class="cellHeader">mamadou</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/02e5e063e961b52d907a107ac65aceba?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=mamadou" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1151" class="gridCell">
+        
+          <div class="cellHeader">SeanDictionary</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/0e0d5a57fa3be22a7e5eab5402fee791?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=SeanDictionary" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1152" class="gridCell">
+        
+          <div class="cellHeader">terkctf</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/029de849ec016bc9a5a58b53d8c2f779?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=terkctf" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1153" class="gridCell">
+        
+          <div class="cellHeader">CTFL0v3r</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/92658611295c83302dda4b22ab3197ae?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=CTFL0v3r" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1154" class="gridCell">
+        
+          <div class="cellHeader">zeosutt</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/b87d0c96d8a0ffb4559e8571b972ddcc?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=zeosutt" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1155" class="gridCell">
+        
+          <div class="cellHeader">Ngu</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/9f04f00638999d795ea68dc801763b50?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=Ngu" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1156" class="gridCell">
+        
+          <div class="cellHeader">XPheli_chan</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/99d985741b82c26f927262235e583bcf?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=XPheli_chan" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1157" class="gridCell">
+        
+          <div class="cellHeader">Kiki&amp;Bouba</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/8498bd9246132fef849e3d38cb43bbdf?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=Kiki%26Bouba" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            2 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1158" class="gridCell">
+        
+          <div class="cellHeader">金石滩小奶龙</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/a4564dfa5e2828e31e6e11211a38b9bc?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=%E9%87%91%E7%9F%B3%E6%BB%A9%E5%B0%8F%E5%A5%B6%E9%BE%99" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            2 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1159" class="gridCell">
+        
+          <div class="cellHeader">wiwiwi</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/d0813c9c9947c708eacb1903989b80dd?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=wiwiwi" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1160" class="gridCell">
+        
+          <div class="cellHeader">Khon</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/4ac3c5c42fc78431d117ceb133e6e767?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=Khon" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1161" class="gridCell">
+        
+          <div class="cellHeader">Tyui</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/effc6a795eca9b228d4da8079fcb8dad?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=Tyui" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1162" class="gridCell">
+        
+          <div class="cellHeader"><span class="__cf_email__" data-cfemail="e68b83a68395d588d788c88393">[email&#160;protected]</span></div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/51594bc324f1503327cd34c0361b2554?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=me%40es3n1n.eu" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1163" class="gridCell">
+        
+          <div class="cellHeader">teasedasd90a8i2asd</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/d5aa4e165c7a87b325075d1bc64d9c1a?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=teasedasd90a8i2asd" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1164" class="gridCell">
+        
+          <div class="cellHeader">the_trick</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/4022a61f982d979e7b7e4530a0cb5dca?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=the_trick" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1165" class="gridCell">
+        
+          <div class="cellHeader">killswitch</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/cbd7a6688e1d67039e3d16e5eda842ee?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=killswitch" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1166" class="gridCell">
+        
+          <div class="cellHeader">Kernel_Sanders</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/f3d086c0074c08b082e8cf08bf5d4fad?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=Kernel_Sanders" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            3 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1167" class="gridCell">
+        
+          <div class="cellHeader">(^・ω・^ )</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/289eda4f31ef420397d932011094cc08?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=%28%5E%E3%83%BB%CF%89%E3%83%BB%5E+%29" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1168" class="gridCell">
+        
+          <div class="cellHeader">lesgo1337</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/034ea0ebba966e5d98b1cc07051b080f?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=lesgo1337" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1169" class="gridCell">
+        
+          <div class="cellHeader">APD-1280</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/e9257f22ceaad0d8c4126a14ea7438b2?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=APD-1280" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            2 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1170" class="gridCell">
+        
+          <div class="cellHeader">yangqiu64</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/deeb6f3a5d7a058a1e9411774483ac38?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=yangqiu64" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1171" class="gridCell">
+        
+          <div class="cellHeader">Sou1Team</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/bf530e5b50f1b9239417180925d58a98?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=Sou1Team" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1172" class="gridCell">
+        
+          <div class="cellHeader">P3dr0</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/1e38c36f235f20b372fe86b85b4a7fa0?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=P3dr0" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1173" class="gridCell">
+        
+          <div class="cellHeader">B34r5hell</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/290d73c3ebbb25faa6989cbf19f06bdc?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=B34r5hell" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1174" class="gridCell">
+        
+          <div class="cellHeader">我就想签个到看看题</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/2b12f97106ad35b19b710857679d78e1?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=%E6%88%91%E5%B0%B1%E6%83%B3%E7%AD%BE%E4%B8%AA%E5%88%B0%E7%9C%8B%E7%9C%8B%E9%A2%98" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            2 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1175" class="gridCell">
+        
+          <div class="cellHeader">Prmtalent</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/0fe756b5b353b37b82f0405f08355d49?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=Prmtalent" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1176" class="gridCell">
+        
+          <div class="cellHeader">ZeroD@ysLate</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/9ed0ea671b258aa1fa22f5f58fa65f28?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=ZeroD%40ysLate" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1177" class="gridCell">
+        
+          <div class="cellHeader">DraSoGo</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/6a53b1add4d48dad765fe97bcd3cdf01?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=DraSoGo" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1178" class="gridCell">
+        
+          <div class="cellHeader">WanZKey</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/8e3d97305bb7ec54ffbbfaf4120f134b?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=WanZKey" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1179" class="gridCell">
+        
+          <div class="cellHeader"><span class="__cf_email__" data-cfemail="11616476707c746320232225242751767c70787d3f727e7c">[email&#160;protected]</span></div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/4e1d60ace7a4819b5f675953ff313cf1?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=pugamer123456%40gmail.com" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1180" class="gridCell">
+        
+          <div class="cellHeader">aespaFanClub</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/0c85a937f6d47211127eb9652cc0a07f?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=aespaFanClub" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            5 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1181" class="gridCell">
+        
+          <div class="cellHeader">H7Tex</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/1e9c657e3a6495041d0b72dbf94004a9?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=H7Tex" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            5 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1182" class="gridCell">
+        
+          <div class="cellHeader">PBR | UCLA</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/ef1cd00e02cdfe37cff2f440efcc3f65?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=PBR+%7C+UCLA" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            7 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1183" class="gridCell">
+        
+          <div class="cellHeader">E2IC3</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/92837d1333e08c02fd1a434e381cf71b?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=E2IC3" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            2 members
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1184" class="gridCell">
+        
+          <div class="cellHeader">io</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/19a074fdd6376c6239cd5bc14ed7d1a8?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=io" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+        
+        <a href="/teams/1185" class="gridCell">
+        
+          <div class="cellHeader">m11k</div>
+          <div class="cellBody">
+            
+            
+            <img width="80" height="80" class="cellBodyIcon" src="https://www.gravatar.com/avatar/776abd4ee4eeec01d5317dc3d88657b4?d=404" data-fallback="https://api.dicebear.com/9.x/initials/svg?seed=m11k" onerror="this.src = this.dataset.fallback;this.onerror='';">
+          </div>
+          <div class="cellFooter">
+            1 member
+          </div>
+        </a>
+      
+    </div>
+  
+
+  
+  <div class="pageCounter">
+    
+    <a class="pageCounterDot " href="/teams_page_1" title="Page 1" aria-label="Page 1"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_2" title="Page 2" aria-label="Page 2"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_3" title="Page 3" aria-label="Page 3"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_4" title="Page 4" aria-label="Page 4"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_5" title="Page 5" aria-label="Page 5"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_6" title="Page 6" aria-label="Page 6"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_7" title="Page 7" aria-label="Page 7"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_8" title="Page 8" aria-label="Page 8"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_9" title="Page 9" aria-label="Page 9"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_10" title="Page 10" aria-label="Page 10"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_11" title="Page 11" aria-label="Page 11"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_12" title="Page 12" aria-label="Page 12"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_13" title="Page 13" aria-label="Page 13"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_14" title="Page 14" aria-label="Page 14"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_15" title="Page 15" aria-label="Page 15"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_16" title="Page 16" aria-label="Page 16"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_17" title="Page 17" aria-label="Page 17"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_18" title="Page 18" aria-label="Page 18"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_19" title="Page 19" aria-label="Page 19"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_20" title="Page 20" aria-label="Page 20"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_21" title="Page 21" aria-label="Page 21"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_22" title="Page 22" aria-label="Page 22"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_23" title="Page 23" aria-label="Page 23"></a>
+    
+    <a class="pageCounterDot active" href="/teams_page_24" title="Page 24" aria-label="Page 24"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_25" title="Page 25" aria-label="Page 25"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_26" title="Page 26" aria-label="Page 26"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_27" title="Page 27" aria-label="Page 27"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_28" title="Page 28" aria-label="Page 28"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_29" title="Page 29" aria-label="Page 29"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_30" title="Page 30" aria-label="Page 30"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_31" title="Page 31" aria-label="Page 31"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_32" title="Page 32" aria-label="Page 32"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_33" title="Page 33" aria-label="Page 33"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_34" title="Page 34" aria-label="Page 34"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_35" title="Page 35" aria-label="Page 35"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_36" title="Page 36" aria-label="Page 36"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_37" title="Page 37" aria-label="Page 37"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_38" title="Page 38" aria-label="Page 38"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_39" title="Page 39" aria-label="Page 39"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_40" title="Page 40" aria-label="Page 40"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_41" title="Page 41" aria-label="Page 41"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_42" title="Page 42" aria-label="Page 42"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_43" title="Page 43" aria-label="Page 43"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_44" title="Page 44" aria-label="Page 44"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_45" title="Page 45" aria-label="Page 45"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_46" title="Page 46" aria-label="Page 46"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_47" title="Page 47" aria-label="Page 47"></a>
+    
+    <a class="pageCounterDot " href="/teams_page_48" title="Page 48" aria-label="Page 48"></a>
+    
+  </div>
+  
+</div>
+
+
+  
+  <a class="pageIndicator previousPage" href="/teams_page_23">
+      <img src="/themes/luna-vite/static/img/left-chevron.svg?d=6ed2d576" alt="Previous page" />
+    </a>
+  
+
+  
+    <a class="pageIndicator nextPage" href="/teams_page_25">
+      <img src="/themes/luna-vite/static/img/right-chevron.svg?d=6ed2d576" alt="Next page" />
+    </a>
+  
+
+
+    </div>
+</div>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        window.strings = {
+            "The CTF is archived.": "The CTF is archived.",
+            "D MMM YYYY, H:mm": "D MMM YYYY, H:mm",
+            "%(time)s until start.": "%(time)s until start.",
+            "%(time)s until end.": "%(time)s until end.",
+            "%(days)sd %(rest)s": "%(days)sd %(rest)s",
+            "%(hours)sh %(rest)s": "%(hours)sh %(rest)s",
+            "HH[h] mm[m] ss[s]": "HH[h] mm[m] ss[s]",
+            "mm[m] ss[s]": "mm[m] ss[s]",
+            "The CTF has started.": "The CTF has started.",
+            "The CTF has ended.": "The CTF has ended.",
+            "Category Breakdown": "Category Breakdown",
+            "Top 10 Teams": "Top 10 Teams",
+            "Top 10 Users": "Top 10 Users",
+            "Solve Percentages": "Solve Percentages",
+            "Fails": "Fails",
+            "Solves": "Solves",
+            "Score over Time": "Score over Time",
+            "Clipboard is not available.": "Clipboard is not available.",
+            "Copied!": "Copied!",
+            "%d<small>s</small>": "%d<small>s</small>",
+            "1<small>min</small>": "1<small>min</small>",
+            "%d<small>mins</small>": "%d<small>mins</small>",
+            "1<small>hr</small>": "1<small>hr</small>",
+            "%d<small>hrs</small>": "%d<small>hrs</small>",
+            "1<small>d</small>": "1<small>d</small>",
+            "%d<small>d</small>": "%d<small>d</small>",
+            "1<small>mth</small>": "1<small>mth</small>",
+            "%d<small>mths</small>": "%d<small>mths</small>",
+            "1<small>yr</small>": "1<small>yr</small>",
+            "%d<small>yrs</small>": "%d<small>yrs</small>",
+            "Hint is not available.": "Hint is not available.",
+            "Close": "Close",
+            "Invite users": "Invite users",
+        };
+    </script>
+    <script defer type="module" src="/themes/luna-vite/static/assets/duration.21bcce5f.js"></script><script defer type="module" src="/themes/luna-vite/static/assets/echarts.4cc66d9c.js"></script><script defer type="module" src="/themes/luna-vite/static/assets/notificationCounter.4f4e1e9f.js"></script><script defer type="module" src="/themes/luna-vite/static/assets/base.29aca91b.js"></script>
+    
+  
+
+    
+<style>
+    :root {
+        --icon-wall: url("/themes/luna-vite/static/img/assets/icon-wall.svg?d=6ed2d576");
+        --triangular-bg: url("/themes/luna-vite/static/img/triangular-bg.svg?d=6ed2d576");
+        --halftone-tail: url("/themes/luna-vite/static/img/halftone-tail.svg?d=6ed2d576");
+    }
+</style>
+
+
+
+    
+
+    <style>
+        body {
+            --halftone-bg: url("/themes/luna-vite/static/img/halftoneButtonBg.svg?d=6ed2d576");
+            --halftone-bg-white: url("/themes/luna-vite/static/img/halftoneButtonBgWhite.svg?d=6ed2d576");
+            --halftone-bg-white-25: url("/themes/luna-vite/static/img/halftoneButtonBgWhite25.svg?d=6ed2d576");
+        }
+
+        @font-face {
+            font-family: "InterVar";
+            font-weight: 100 900;
+            font-display: swap;
+            font-style: normal;
+            src: url("/themes/luna-vite/static/fonts/InterVariable.woff2?d=6ed2d576") format("woff2-variations"),
+                 url("/themes/luna-vite/static/fonts/InterVariable.woff2?d=6ed2d576") format("woff2");
+            src: url("/themes/luna-vite/static/fonts/InterVariable.woff2?d=6ed2d576") format("woff2") tech("variations");
+        }
+        
+        @font-face {
+            font-family: "InterVar";
+            font-weight: 100 900;
+            font-display: swap;
+            font-style: italic;
+            src: url("/themes/luna-vite/static/fonts/InterVariable-Italic.woff2?d=6ed2d576") format("woff2-variations"),
+                 url("/themes/luna-vite/static/fonts/InterVariable-Italic.woff2?d=6ed2d576") format("woff2");
+            src: url("/themes/luna-vite/static/fonts/InterVariable-Italic.woff2?d=6ed2d576") format("woff2") tech("variations");
+        }
+    </style>
+
+    
+</body>
+
+</html>

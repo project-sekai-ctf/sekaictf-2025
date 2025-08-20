@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Cryptography", "id": 9, "name": "SSSS"}, "team": {"id": 2134, "name": "MindCrafters"}, "challenge_id": 9, "user": {"id": 4545, "name": "michalBB"}, "type": "correct", "date": "2025-08-17T19:45:58.833160+00:00", "id": 6729}], "meta": {"count": 1}}

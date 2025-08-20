@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 39, "category": "Misc", "id": 1, "name": "\u25b6 Sanity Check"}, "team": {"id": 1902, "name": "Book of /etc/shadow"}, "challenge_id": 1, "user": {"id": 3956, "name": "murmus"}, "type": "correct", "date": "2025-08-16T18:21:20.290422+00:00", "id": 3728}], "meta": {"count": 1}}

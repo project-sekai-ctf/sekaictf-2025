@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Cryptography", "id": 9, "name": "SSSS"}, "team": {"id": 586, "name": "Bugs B0unt3r"}, "challenge_id": 9, "user": {"id": 3400, "name": "Soprano"}, "type": "correct", "date": "2025-08-16T10:06:39.406594+00:00", "id": 2442}], "meta": {"count": 1}}

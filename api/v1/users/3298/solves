@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 159, "category": "Pwn", "id": 8, "name": "speedpwn 2"}, "team": {"id": 1070, "name": "BunkyoWesterns"}, "challenge_id": 8, "user": {"id": 3298, "name": "tabi"}, "type": "correct", "date": "2025-08-17T01:30:32.607161+00:00", "id": 4304}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Reverse", "id": 21, "name": "Sekai Bank - Signature"}, "team": {"id": 120, "name": "ssh root@sekai"}, "challenge_id": 21, "user": {"id": 208, "name": "pyload"}, "type": "correct", "date": "2025-08-17T15:38:32.972686+00:00", "id": 6310}], "meta": {"count": 1}}

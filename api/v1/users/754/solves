@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 39, "category": "Misc", "id": 1, "name": "\u25b6 Sanity Check"}, "team": {"id": 408, "name": "Jamaican Pandas"}, "challenge_id": 1, "user": {"id": 754, "name": "winkleCTF"}, "type": "correct", "date": "2025-08-17T02:15:55.527687+00:00", "id": 4474}], "meta": {"count": 1}}

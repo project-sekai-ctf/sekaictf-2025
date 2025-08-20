@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 131, "category": "Pwn", "id": 28, "name": "Learning OOP"}, "team": {"id": 158, "name": "L3H_Sec"}, "challenge_id": 28, "user": {"id": 1014, "name": "wgg"}, "type": "correct", "date": "2025-08-16T21:55:57.516890+00:00", "id": 4089}], "meta": {"count": 1}}

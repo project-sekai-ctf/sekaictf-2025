@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Web", "id": 12, "name": "My Flask App"}, "team": {"id": 909, "name": "WROng_flag"}, "challenge_id": 12, "user": {"id": 2938, "name": "Gumol"}, "type": "correct", "date": "2025-08-16T07:23:44.716853+00:00", "id": 1934}], "meta": {"count": 1}}

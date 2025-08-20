@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Cryptography", "id": 38, "name": "I Dream of Genni"}, "team": {"id": 1042, "name": "freep0nx"}, "challenge_id": 38, "user": {"id": 4272, "name": "acmo0"}, "type": "correct", "date": "2025-08-17T08:38:23.370455+00:00", "id": 5167}], "meta": {"count": 1}}

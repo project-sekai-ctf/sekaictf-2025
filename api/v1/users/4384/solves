@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Cryptography", "id": 38, "name": "I Dream of Genni"}, "team": {"id": 1950, "name": "Belgian Red Daemons"}, "challenge_id": 38, "user": {"id": 4384, "name": "jeane"}, "type": "correct", "date": "2025-08-17T13:57:48.430222+00:00", "id": 6014}], "meta": {"count": 1}}

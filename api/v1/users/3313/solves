@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Cryptography", "id": 9, "name": "SSSS"}, "team": {"id": 1529, "name": "Pwncetta&Pecorino"}, "challenge_id": 9, "user": {"id": 3313, "name": "SkyBlue"}, "type": "correct", "date": "2025-08-16T10:23:30.490839+00:00", "id": 2495}], "meta": {"count": 1}}

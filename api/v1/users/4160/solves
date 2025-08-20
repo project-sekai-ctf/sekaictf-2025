@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Reverse", "id": 21, "name": "Sekai Bank - Signature"}, "team": {"id": 550, "name": "Emu Exploit"}, "challenge_id": 21, "user": {"id": 4160, "name": "sealldev"}, "type": "correct", "date": "2025-08-17T05:27:36.612939+00:00", "id": 4835}], "meta": {"count": 1}}

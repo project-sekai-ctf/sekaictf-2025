@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Cryptography", "id": 9, "name": "SSSS"}, "team": {"id": 1300, "name": "NUSSM"}, "challenge_id": 9, "user": {"id": 2483, "name": "bintegrals"}, "type": "correct", "date": "2025-08-16T10:46:04.389625+00:00", "id": 2570}], "meta": {"count": 1}}

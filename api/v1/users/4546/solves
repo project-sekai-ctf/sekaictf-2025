@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Web", "id": 12, "name": "My Flask App"}, "team": {"id": 2245, "name": "Wa-Water burns so bright"}, "challenge_id": 12, "user": {"id": 4546, "name": "wannebetheshy"}, "type": "correct", "date": "2025-08-17T21:19:12.165311+00:00", "id": 6834}], "meta": {"count": 1}}

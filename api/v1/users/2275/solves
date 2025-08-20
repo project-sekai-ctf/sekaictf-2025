@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 131, "category": "Pwn", "id": 28, "name": "Learning OOP"}, "team": {"id": 624, "name": "CTF Academy"}, "challenge_id": 28, "user": {"id": 2275, "name": "elemental"}, "type": "correct", "date": "2025-08-17T11:11:38.272939+00:00", "id": 5573}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 39, "category": "Misc", "id": 1, "name": "\u25b6 Sanity Check"}, "team": {"id": 1526, "name": "RTFM"}, "challenge_id": 1, "user": {"id": 1580, "name": "ssh22"}, "type": "correct", "date": "2025-08-16T07:19:35.618284+00:00", "id": 1917}], "meta": {"count": 1}}

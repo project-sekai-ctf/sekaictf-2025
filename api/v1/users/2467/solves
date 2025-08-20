@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Cryptography", "id": 9, "name": "SSSS"}, "team": {"id": 1084, "name": "VSL"}, "challenge_id": 9, "user": {"id": 2467, "name": "SuperLag"}, "type": "correct", "date": "2025-08-16T04:53:39.162738+00:00", "id": 1332}], "meta": {"count": 1}}

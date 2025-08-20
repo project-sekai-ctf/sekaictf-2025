@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 159, "category": "Pwn", "id": 8, "name": "speedpwn 2"}, "team": {"id": 26, "name": "Team Estonia"}, "challenge_id": 8, "user": {"id": 36, "name": "solacelilith"}, "type": "correct", "date": "2025-08-17T23:25:42.525778+00:00", "id": 6944}], "meta": {"count": 1}}

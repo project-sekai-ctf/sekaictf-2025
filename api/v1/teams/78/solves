@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 39, "category": "Misc", "id": 1, "name": "\u25b6 Sanity Check"}, "team": {"id": 78, "name": "flag.txt"}, "challenge_id": 1, "user": {"id": 129, "name": "grep ctf"}, "type": "correct", "date": "2025-08-16T01:02:22.366452+00:00", "id": 71}], "meta": {"count": 1}}

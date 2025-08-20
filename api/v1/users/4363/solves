@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "category": "Misc", "id": 3, "name": "Discrepancy"}, "team": {"id": 1480, "name": "PETIRsec"}, "challenge_id": 3, "user": {"id": 4363, "name": "meister"}, "type": "correct", "date": "2025-08-17T12:46:12.171901+00:00", "id": 5795}], "meta": {"count": 1}}
